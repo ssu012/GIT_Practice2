@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Gas Price Tracker</title>
+<link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="app-header">
+    <div class="app-header__title">
+      <h1>⛽ Gas Price Tracker</h1>
+      <p class="app-header__subtitle">Competitor fuel pricing, sourced from the daily <em>Competitor Pricing Entry</em> sheets</p>
+    </div>
+    <div class="app-header__meta" id="meta"></div>
+  </header>
+
+  <nav class="site-tabs" id="site-tabs"></nav>
+
+  <main id="app">
+    <p class="loading">Loading pricing data…</p>
+  </main>
+
+  <footer class="app-footer">
+    <p>
+      Data entered manually each morning into per-site Google Sheets and synced into this app
+      (see <code>scripts/build_data.py</code>). Every competitor listed with a website in the
+      sheet links directly to that source below — use it to verify a price before overriding a match.
+    </p>
+  </footer>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>

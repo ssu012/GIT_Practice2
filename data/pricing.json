@@ -1,0 +1,169 @@
+{
+  "generated_note": "Parsed from Google Drive: 'Weldon & Emporia Daily Competitor Pricing Entry' sheets. Re-run scripts/build_data.py after refreshing data/raw/*.csv.",
+  "fuel_labels": {
+    "UNL": "Unleaded",
+    "PLU": "Plus",
+    "PRM": "Premium",
+    "DSL": "Diesel"
+  },
+  "sites": [
+    {
+      "id": "emporia",
+      "name": "0615 - Emporia Family Fare",
+      "date": "09/09/2026 (Wednesday)",
+      "due_by": "3:26 AM",
+      "survey": "Daily Fuel Prices - Morning",
+      "instructions": [
+        "Match Quik Fuel for UNL, PLU, PRM & DSL"
+      ],
+      "competitors": [
+        {
+          "name": "Quik Fuel",
+          "skip": false,
+          "spot_time": "12:58:00 AM",
+          "prices": {
+            "UNL": 3.779,
+            "PLU": 4.279,
+            "PRM": 4.579,
+            "DSL": 5.999
+          },
+          "address": null,
+          "website": null
+        },
+        {
+          "name": "BP Cornerstone E Market",
+          "skip": false,
+          "spot_time": "12:58:00 AM",
+          "prices": {
+            "UNL": 3.899,
+            "PLU": 4.199,
+            "PRM": 4.499,
+            "DSL": 5.999
+          },
+          "address": null,
+          "website": null
+        },
+        {
+          "name": "7-11",
+          "skip": false,
+          "spot_time": "12:58:00 AM",
+          "prices": {
+            "UNL": 3.889,
+            "PLU": 4.289,
+            "PRM": 4.739,
+            "DSL": null
+          },
+          "address": "606 S Main St, Emporia VA 23847-2518",
+          "website": "https://www.7-eleven.com/locations/va/emporia/606-south-main-st-11079?utm_source=G&utm_medium=local&utm_campaign=google-local"
+        },
+        {
+          "name": "Exxon Main St Food Mart",
+          "skip": false,
+          "spot_time": "12:58:00 AM",
+          "prices": {
+            "UNL": 3.799,
+            "PLU": 4.199,
+            "PRM": 4.599,
+            "DSL": null
+          },
+          "address": null,
+          "website": null
+        },
+        {
+          "name": "Shell Slip In Hwy 301",
+          "skip": false,
+          "spot_time": "12:58:00 AM",
+          "prices": {
+            "UNL": 3.799,
+            "PLU": 4.299,
+            "PRM": 4.699,
+            "DSL": null
+          },
+          "address": null,
+          "website": null
+        }
+      ],
+      "our_price": {
+        "name": "Our Price (Emporia Family Fare)",
+        "skip": false,
+        "spot_time": "12:58:00 AM",
+        "prices": {
+          "UNL": 3.779,
+          "PLU": 4.279,
+          "PRM": 4.579,
+          "DSL": 5.999
+        }
+      },
+      "rules": {}
+    },
+    {
+      "id": "weldon",
+      "name": "0443 - Weldon Family Fare",
+      "date": "09/10/2026 (Thursday)",
+      "due_by": "8:00:00 AM",
+      "survey": "Daily Fuel Prices - Morning",
+      "instructions": [
+        "Match 7-11 or Sheetz on UNL",
+        "Match the Shell onPLU and PRM.  Stay with Shell on plus and super."
+      ],
+      "competitors": [
+        {
+          "name": "Sheetz",
+          "skip": false,
+          "spot_time": "11:30:00 AM",
+          "prices": {
+            "UNL": 3.899,
+            "PLU": 4.299,
+            "PRM": 4.699,
+            "DSL": 5.419
+          },
+          "address": "1500 Julian R Allsbrook Hwy, Roanoke Rapids, NC 27870",
+          "website": "https://orders.sheetz.com/findASheetz/store/567"
+        },
+        {
+          "name": "Shell New Dixie Mart",
+          "skip": false,
+          "spot_time": "11:30:00 AM",
+          "prices": {
+            "UNL": 3.899,
+            "PLU": 4.299,
+            "PRM": 4.799,
+            "DSL": 5.699
+          },
+          "address": null,
+          "website": null
+        },
+        {
+          "name": "7-11",
+          "skip": false,
+          "spot_time": "11:30:00 AM",
+          "prices": {
+            "UNL": 3.879,
+            "PLU": 4.279,
+            "PRM": 4.629,
+            "DSL": 5.499
+          },
+          "address": "1479 Julian R Allsbrook Hwy, Roanoke Rapids, NC 27870",
+          "website": "https://www.7-eleven.com/locations/nc/roanoke-rapids/1479-julian-r-allsbrook-hwy-42829"
+        }
+      ],
+      "our_price": {
+        "name": "Our Price (Weldon Family Fare)",
+        "skip": false,
+        "spot_time": "11:30:00 AM",
+        "prices": {
+          "UNL": 3.879,
+          "PLU": 4.299,
+          "PRM": 4.799,
+          "DSL": 5.419
+        }
+      },
+      "rules": {
+        "UNL": "Match 7-11 or Sheetz (LOWER)",
+        "PLU": "Match Sheetz or Shell",
+        "PRM": "Match Sheetz or Shell",
+        "DSL": "Match 7-11 or Sheetz (LOWER)"
+      }
+    }
+  ]
+}
