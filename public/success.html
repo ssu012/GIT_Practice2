@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Order Confirmed — Hamro Pasal</title>
+<link rel="stylesheet" href="assets/css/style.css" />
+<style>
+  .result-page {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 20px;
+  }
+  .result-emoji { font-size: 4rem; margin-bottom: 12px; }
+  .result-page h1 { color: var(--green-dark); margin: 0 0 10px; }
+  .result-page p { color: var(--ink-soft); max-width: 40ch; margin: 0 0 24px; }
+</style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/" style="text-decoration:none;">
+        <div class="brand-mark" aria-hidden="true">HP</div>
+        <div class="brand-text">
+          <span class="brand-title">HAMRO PASAL</span>
+          <span class="brand-sub">USA</span>
+        </div>
+      </a>
+    </div>
+  </header>
+
+  <div class="result-page">
+    <span class="result-emoji">✅</span>
+    <h1>Thank you — your order is confirmed!</h1>
+    <p>A receipt has been sent to your email by Stripe. We'll get your order packed and shipped soon.</p>
+    <a href="/" class="hero-cta">Continue Shopping →</a>
+  </div>
+
+  <script>
+    // Clear the cart now that checkout succeeded.
+    try { localStorage.removeItem("hamro_pasal_cart"); } catch (e) {}
+  </script>
+</body>
+</html>

@@ -203,6 +203,25 @@
   </div>
 </footer>
 
+<!-- Cart drawer -->
+<div class="cart-overlay" id="cartOverlay"></div>
+<aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart">
+  <div class="cart-drawer-head">
+    <h3>Your Cart</h3>
+    <button class="cart-close" id="cartCloseBtn" aria-label="Close cart">&times;</button>
+  </div>
+  <div class="cart-drawer-body" id="cartDrawerBody"></div>
+  <div class="cart-drawer-footer" id="cartDrawerFooter" hidden>
+    <div class="cart-total-row">
+      <span>Total</span>
+      <span id="cartTotal">$0.00</span>
+    </div>
+    <button class="btn-checkout" id="checkoutBtn">Checkout with card →</button>
+    <p class="cart-secure-note">🔒 Secure checkout powered by Stripe</p>
+  </div>
+</aside>
+
+<script src="assets/js/cart.js"></script>
 <script src="assets/js/main.js"></script>
 </body>
 </html>
